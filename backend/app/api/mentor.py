@@ -1,4 +1,3 @@
-"""GET /mentor - Lesson 2 (Machine Learning Coach)."""
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
