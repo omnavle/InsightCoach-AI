@@ -1,4 +1,3 @@
-"""GET /dataset - dataset metadata + Lesson 1 (Understand Your Dataset)."""
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
