@@ -1,4 +1,3 @@
-"""POST /upload - accept a CSV, store metadata, save the file to disk."""
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File
 from sqlalchemy.orm import Session
 
