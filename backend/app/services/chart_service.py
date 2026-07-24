@@ -1,4 +1,3 @@
-"""Builds Recharts-ready data arrays for a chosen chart type and columns."""
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
