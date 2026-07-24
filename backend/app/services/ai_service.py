@@ -1,4 +1,3 @@
-"""Calls the LLM with the prompt templates and returns parsed, structured results."""
 from typing import Any, Dict, List
 
 import pandas as pd
