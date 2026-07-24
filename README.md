@@ -118,41 +118,24 @@ InsightCoach-AI/
 
 ## 🏠 Home Page
 
-```md
-![Home](docs/images/home.png)
-```
-
----
-
-## 📂 Upload Dataset
-
-```md
-![Upload](docs/images/upload.png)
-```
-
+<img src="./docs/images/home.png" width="1000" alt="Home"/>
 ---
 
 ## 📊 Dataset Overview
 
-```md
 ![Overview](docs/images/overview.png)
-```
 
 ---
 
 ## 📈 Visualization Coach
 
-```md
 ![Charts](docs/images/charts.png)
-```
 
 ---
 
 ## 💬 AI Mentor Chat
 
-```md
 ![Chat](docs/images/chat.png)
-```
 
 ---
 
