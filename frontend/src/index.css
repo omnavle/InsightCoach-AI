@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  background-color: #EEF1EC;
+  background-image:
+    linear-gradient(90deg, rgba(20, 35, 31, 0.035) 1px, transparent 1px),
+    linear-gradient(rgba(20, 35, 31, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+@layer components {
+  .card {
+    @apply bg-card border border-line rounded-sm2 p-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm2 bg-pine-500 px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-pine-600 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm2 border border-ink-900 bg-transparent px-4 py-2.5 text-sm font-medium text-ink-900 transition-colors hover:bg-ink-900 hover:text-paper disabled:opacity-50;
+  }
+
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-[0.16em] text-pine-600;
+  }
+
+  .reveal {
+    animation: reveal 0.4s ease-out;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
