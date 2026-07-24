@@ -144,7 +144,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-line py-8 text-center font-mono text-xs text-ink-500">
-        InsightCoach — built as a learning project.
+        InsightCoach — Learn any dataset before building a model.
       </footer>
     </div>
   );
