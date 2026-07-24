@@ -1,4 +1,3 @@
-"""Helpers for saving uploaded files and locating them on disk."""
 import os
 import uuid
 
