@@ -1,4 +1,3 @@
-"""Pydantic schemas for the chat / mentor endpoint."""
 from typing import List, Optional
 
 from pydantic import BaseModel
