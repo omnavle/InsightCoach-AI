@@ -1,4 +1,3 @@
-"""Prompt templates used by InsightCoach AI's mentor features."""
 from langchain_core.prompts import PromptTemplate
 
 DATASET_SUMMARY_PROMPT = PromptTemplate(
