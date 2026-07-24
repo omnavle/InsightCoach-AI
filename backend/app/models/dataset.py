@@ -1,4 +1,3 @@
-"""SQLAlchemy model for dataset metadata."""
 from sqlalchemy import Column, Integer, String, DateTime, BigInteger
 from sqlalchemy.sql import func
 
