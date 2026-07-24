@@ -1,115 +1,311 @@
-# InsightCoach AI
+<div align="center">
 
-**Turn Data into Understanding with AI**
+# 📊 InsightCoach AI
 
-InsightCoach AI is a beginner-friendly, full-stack AI learning platform. Upload any CSV
-dataset and an AI Data Science Mentor guides you step by step: explaining the dataset in
-plain language, recommending a machine learning approach, suggesting visualizations,
-generating a practice quiz, and answering follow-up questions in a chat panel.
+### **Turn Data into Understanding with AI**
 
-It's built to feel like an interactive study guide (think Notion / Kaggle Learn), not a
-business analytics dashboard.
+An AI-powered learning platform that helps users understand datasets through guided analysis, machine learning recommendations, intelligent visualizations, practice questions, and conversational AI.
 
-## Tech Stack
+<p>
+  <img src="https://img.shields.io/badge/React-Vite-61DAFB?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi"/>
+  <img src="https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql"/>
+  <img src="https://img.shields.io/badge/LangChain-AI-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Groq-API-red?style=for-the-badge"/>
+</p>
 
-**Frontend:** React (Vite) · TypeScript · Tailwind CSS · React Router · Axios ·
-React Hook Form · Recharts
+<p>
+  <strong>React • FastAPI • PostgreSQL • LangChain • Groq API • Pandas</strong>
+</p>
 
-**Backend:** FastAPI · SQLAlchemy · PostgreSQL · Pandas · python-dotenv
+</div>
 
-**AI:** LangChain · Groq API · Prompt Templates
+---
 
-No authentication, Docker, Redis, Celery, or background workers — kept intentionally
-lightweight for a portfolio project.
+# 🚀 Overview
 
-## Project Structure
+InsightCoach AI is a full-stack AI learning platform that transforms raw CSV datasets into interactive learning experiences. Instead of focusing on business analytics dashboards, the platform acts as an AI Data Science Mentor by explaining datasets in simple language, recommending machine learning approaches, suggesting visualizations, generating practice questions, and answering follow-up questions through an AI chat interface.
 
+---
+
+# ✨ Features
+
+- 📂 Upload CSV datasets
+- 📊 Automatic dataset profiling
+- 🤖 AI-generated dataset explanation
+- 🧠 Machine Learning recommendation
+- 📈 AI-powered visualization suggestions
+- 💬 Natural language chart generation
+- ❓ AI-generated practice questions
+- 💡 Context-aware AI Mentor Chat
+- ⚡ Responsive React interface
+- 📝 Markdown-supported chat responses
+
+---
+
+# 🏗️ Tech Stack
+
+| Frontend | Backend | AI | Database |
+|-----------|-----------|-----------|-----------|
+| React (Vite) | FastAPI | LangChain | PostgreSQL |
+| TypeScript | SQLAlchemy | Groq API | |
+| Tailwind CSS | Pandas | Prompt Engineering | |
+| React Router | Python | | |
+| Axios | python-dotenv | | |
+| Recharts | | | |
+
+---
+
+# 🏛️ System Architecture
+
+```text
+                    CSV Upload
+                         │
+                         ▼
+               Pandas Data Analysis
+                         │
+                         ▼
+              LangChain Prompt Layer
+                         │
+                         ▼
+                    Groq LLM
+                         │
+      ┌──────────────────┼──────────────────┐
+      ▼                  ▼                  ▼
+Dataset Summary    ML Recommendation    Chart Suggestions
+      │                  │                  │
+      └──────────────────┼──────────────────┘
+                         ▼
+                Practice Questions
+                         │
+                         ▼
+                  AI Mentor Chat
 ```
+
+---
+
+# 📂 Project Structure
+
+```text
 InsightCoach-AI/
-  frontend/          React + Vite + TypeScript app
-  backend/app/
-    api/             FastAPI route handlers (upload, dataset, mentor, charts, practice, chat)
-    ai/              LangChain prompt templates + Groq LLM wrapper
-    database/        SQLAlchemy engine/session setup
-    models/          SQLAlchemy ORM models
-    schemas/         Pydantic request/response schemas
-    services/        Business logic (pandas analysis, AI orchestration, chart building)
-    utils/           File handling + JSON parsing helpers
-  uploads/           Uploaded CSV files live here (metadata only goes to Postgres)
-  requirements.txt
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   └── package.json
+│
+├── backend/
+│   └── app/
+│       ├── api/
+│       ├── ai/
+│       ├── database/
+│       ├── models/
+│       ├── schemas/
+│       ├── services/
+│       ├── utils/
+│       └── main.py
+│
+├── uploads/
+├── requirements.txt
+└── README.md
 ```
 
-## The Learning Journey
+---
 
-| Lesson | What it does |
-|---|---|
-| 0 — Upload Dataset | Upload a CSV, see rows/columns/file size |
-| 1 — Understand Your Dataset | Shape, dtypes, missing values, duplicates, preview + AI explanation |
-| 2 — Machine Learning Coach | AI identifies the ML problem type and gives prep recommendations |
-| 3 — Visualization Coach | AI-suggested charts, "Generate Chart" buttons, and natural-language chart requests |
-| 4 — Practice Questions | 5 auto-generated beginner questions, click-to-ask |
-| 5 — Ask the Mentor | Chatbot grounded in the uploaded dataset, with Markdown + suggested prompts |
+# 📸 Screenshots
 
-## Getting Started
+> Replace these placeholders with your application screenshots.
 
-### 1. Backend
+## 🏠 Home Page
+
+```md
+![Home](docs/images/home.png)
+```
+
+---
+
+## 📂 Upload Dataset
+
+```md
+![Upload](docs/images/upload.png)
+```
+
+---
+
+## 📊 Dataset Overview
+
+```md
+![Overview](docs/images/overview.png)
+```
+
+---
+
+## 📈 Visualization Coach
+
+```md
+![Charts](docs/images/charts.png)
+```
+
+---
+
+## 💬 AI Mentor Chat
+
+```md
+![Chat](docs/images/chat.png)
+```
+
+---
+
+# ⚙️ Installation
+
+## 1️⃣ Clone Repository
+
+```bash
+git clone https://github.com/yourusername/InsightCoach-AI.git
+
+cd InsightCoach-AI
+```
+
+---
+
+## 2️⃣ Backend Setup
 
 ```bash
 cd backend
+
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+
+# Windows
+venv\Scripts\activate
+
+# Linux / macOS
+source venv/bin/activate
+
 pip install -r ../requirements.txt
-
-cp .env.example .env
-# then edit .env and set DATABASE_URL and GROQ_API_KEY
-
-# create the database first, e.g.:
-# createdb insightcoach
-
-uvicorn app.main:app --reload
 ```
 
-The API runs at `http://localhost:8000`. Interactive docs at `http://localhost:8000/docs`.
+### Create `.env`
 
-### 2. Frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-The app runs at `http://localhost:5173` and proxies `/api/*` requests to the backend.
-
-## Environment Variables (backend/.env)
-
-```
+```env
 DATABASE_URL=postgresql://postgres:postgres@localhost:5432/insightcoach
-GROQ_API_KEY=your_groq_api_key_here
+GROQ_API_KEY=your_groq_api_key
 UPLOAD_DIR=../uploads
 ```
 
-Get a free Groq API key at https://console.groq.com.
+### Run Backend
 
-## REST API
-
-```
-POST /upload                          upload a CSV
-GET  /dataset                         list datasets
-GET  /dataset/{id}                    dataset metadata
-GET  /dataset/{id}/overview           Lesson 1 data + AI summary
-GET  /mentor/{id}                     Lesson 2 ML recommendation
-GET  /charts/{id}/suggestions         Lesson 3 chart suggestions
-POST /charts/{id}/generate            build a specific chart
-POST /charts/{id}/from-text           build a chart from a natural-language request
-GET  /practice/{id}                   Lesson 4 practice questions
-POST /chat                            Lesson 5 mentor chat
+```bash
+uvicorn app.main:app --reload
 ```
 
-## Notes
+Backend API
 
-- Only dataset **metadata** is stored in PostgreSQL; the CSV itself stays in `uploads/`.
-- AI JSON responses are parsed defensively (`utils/json_utils.py`) since LLMs occasionally
-  wrap JSON in markdown fences.
-- Chart data is computed server-side with pandas and returned in a shape Recharts can
-  render directly — the AI only decides *which* chart and *which* columns.
+```
+http://localhost:8000
+```
+
+Swagger Documentation
+
+```
+http://localhost:8000/docs
+```
+
+---
+
+## 3️⃣ Frontend Setup
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Frontend
+
+```
+http://localhost:5173
+```
+
+---
+
+# 📡 REST API
+
+| Method | Endpoint | Description |
+|---------|----------|-------------|
+| POST | `/upload` | Upload CSV Dataset |
+| GET | `/dataset` | List Uploaded Datasets |
+| GET | `/dataset/{id}` | Dataset Metadata |
+| GET | `/dataset/{id}/overview` | Dataset Analysis |
+| GET | `/mentor/{id}` | ML Recommendation |
+| GET | `/charts/{id}/suggestions` | Visualization Suggestions |
+| POST | `/charts/{id}/generate` | Generate Chart |
+| POST | `/charts/{id}/from-text` | Generate Chart using Natural Language |
+| GET | `/practice/{id}` | Practice Questions |
+| POST | `/chat` | AI Mentor Chat |
+
+---
+
+# 🧠 AI Workflow
+
+```text
+User Uploads CSV
+        │
+        ▼
+Pandas Dataset Analysis
+        │
+        ▼
+LangChain Prompt Engineering
+        │
+        ▼
+      Groq API
+        │
+        ├──────── Dataset Explanation
+        ├──────── ML Recommendation
+        ├──────── Visualization Suggestions
+        ├──────── Practice Question Generator
+        └──────── AI Mentor Chat
+```
+
+---
+
+# 🌟 Highlights
+
+- Full-Stack AI Application
+- Modular FastAPI Architecture
+- AI-Powered Learning Workflow
+- Interactive Dataset Exploration
+- Natural Language Chart Generation
+- Context-Aware Conversational Assistant
+- Clean & Scalable Project Structure
+- Beginner-Friendly AI Data Science Mentor
+- Recruiter-Friendly Portfolio Project
+
+---
+
+# 🔮 Future Improvements
+
+- PDF Report Export
+- Data Cleaning Recommendations
+- Dataset Comparison
+- Feature Engineering Suggestions
+- More Interactive Charts
+- Explain Individual Columns
+- Download AI Summary Report
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### ⭐ If you found this project useful, please consider giving it a Star!
+
+**Built with ❤️ using React, FastAPI, PostgreSQL, LangChain, and Groq API**
+
+</div>
