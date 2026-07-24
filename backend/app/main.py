@@ -1,4 +1,3 @@
-"""InsightCoach AI - FastAPI application entrypoint."""
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
