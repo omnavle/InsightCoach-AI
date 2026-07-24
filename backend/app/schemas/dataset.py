@@ -1,4 +1,3 @@
-"""Pydantic schemas for dataset endpoints."""
 from datetime import datetime
 from typing import Optional, List, Any, Dict
 
