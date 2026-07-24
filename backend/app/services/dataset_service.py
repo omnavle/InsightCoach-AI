@@ -1,4 +1,3 @@
-"""Pandas-based helpers for reading and summarizing a dataset."""
 from typing import Any, Dict, List
 
 import pandas as pd
@@ -23,7 +22,6 @@ def get_dataset_or_404(db: Session, dataset_id: int) -> Dataset:
 
 
 def build_overview(df: pd.DataFrame) -> Dict[str, Any]:
-    """Build the structured (non-AI) part of the dataset overview."""
     columns: List[Dict[str, Any]] = []
     for col in df.columns:
         columns.append(
@@ -46,7 +44,6 @@ def build_overview(df: pd.DataFrame) -> Dict[str, Any]:
 
 
 def guess_target_column(df: pd.DataFrame) -> str:
-    """Very lightweight heuristic used as a fallback if the AI doesn't specify one."""
     common_names = ["target", "label", "class", "outcome", "y", "price", "sales", "churn"]
     for col in df.columns:
         if col.lower() in common_names:
