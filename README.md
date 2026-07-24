@@ -84,41 +84,13 @@ Dataset Summary    ML Recommendation    Chart Suggestions
 
 ---
 
-# 📂 Project Structure
-
-```text
-InsightCoach-AI/
-│
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   └── package.json
-│
-├── backend/
-│   └── app/
-│       ├── api/
-│       ├── ai/
-│       ├── database/
-│       ├── models/
-│       ├── schemas/
-│       ├── services/
-│       ├── utils/
-│       └── main.py
-│
-├── uploads/
-├── requirements.txt
-└── README.md
-```
-
----
-
 # 📸 Screenshots
 
-> Replace these placeholders with your application screenshots.
 
 ## 🏠 Home Page
 
 <img src="./docs/images/home.png" width="1000" alt="Home"/>
+
 ---
 
 ## 📊 Dataset Overview
@@ -213,22 +185,6 @@ http://localhost:5173
 
 ---
 
-# 📡 REST API
-
-| Method | Endpoint | Description |
-|---------|----------|-------------|
-| POST | `/upload` | Upload CSV Dataset |
-| GET | `/dataset` | List Uploaded Datasets |
-| GET | `/dataset/{id}` | Dataset Metadata |
-| GET | `/dataset/{id}/overview` | Dataset Analysis |
-| GET | `/mentor/{id}` | ML Recommendation |
-| GET | `/charts/{id}/suggestions` | Visualization Suggestions |
-| POST | `/charts/{id}/generate` | Generate Chart |
-| POST | `/charts/{id}/from-text` | Generate Chart using Natural Language |
-| GET | `/practice/{id}` | Practice Questions |
-| POST | `/chat` | AI Mentor Chat |
-
----
 
 # 🧠 AI Workflow
 
@@ -251,44 +207,3 @@ LangChain Prompt Engineering
         └──────── AI Mentor Chat
 ```
 
----
-
-# 🌟 Highlights
-
-- Full-Stack AI Application
-- Modular FastAPI Architecture
-- AI-Powered Learning Workflow
-- Interactive Dataset Exploration
-- Natural Language Chart Generation
-- Context-Aware Conversational Assistant
-- Clean & Scalable Project Structure
-- Beginner-Friendly AI Data Science Mentor
-- Recruiter-Friendly Portfolio Project
-
----
-
-# 🔮 Future Improvements
-
-- PDF Report Export
-- Data Cleaning Recommendations
-- Dataset Comparison
-- Feature Engineering Suggestions
-- More Interactive Charts
-- Explain Individual Columns
-- Download AI Summary Report
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<div align="center">
-
-### ⭐ If you found this project useful, please consider giving it a Star!
-
-**Built with ❤️ using React, FastAPI, PostgreSQL, LangChain, and Groq API**
-
-</div>
